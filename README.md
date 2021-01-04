@@ -34,10 +34,10 @@ avg (credit-debit) amount, and net values annually
 4. How would you productise the predictive financial distress model in order to consume it and update it (real time) with more data.
 
    A flask API can be created that loads up the latest version of the model, processes the input data from a new individual (as an input parameter), and generates prediction through the model. This prediction and the requisite information is sent as a response from the API, or stored in the DB from where it can be read by the consuming service. Here's a schematic of how it would work:
-   ![Training pipeline](IMG_0879.jpg)
+   ![Training pipeline](/IMG_0879.jpg)
    
    A weekly scheduler can use the saved data to update the model with the latest data and store the improved model. A rough schematic of the process:
-   ![Retraining pipeline](IMG_0880.jpg)
+   ![Retraining pipeline](/IMG_0880.jpg)
 
 5. Which part is the most challenging? 
 
